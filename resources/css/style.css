@@ -1,0 +1,315 @@
+/* universal */
+html,
+body {
+  font-family: 'Mukta', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+html {
+  background: url('../../resources/images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@font-face {
+    font-family: 'peperoncino_sansregular';
+    src: url('../../resources/css/fonts/resistenza_-_peperoncinosans-regular-webfont.woff2') format('woff2'),
+         url('../../resources/css/fonts/resistenza_-_peperoncinosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+  font-family: 'peperoncino_sansregular';
+  font-size: 5.5rem;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  line-height: 0.9;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: RGB(173, 9, 45);
+  line-height: 1.1;
+}
+
+/* content */
+.title {
+  width: 600px;
+  margin: 26px 4%;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 50px;
+  width: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Mukta', sans-serif;
+  color: white;
+  border: 2px solid RGB(173, 9, 45);
+  border-radius: 18px
+}
+
+input:focus {
+  background-color: RGB(173, 9, 45);
+}
+
+input[type=button] {
+  background-color: RGB(173, 9, 45);
+  width: 60px;
+  margin-left: 20px;
+  border-radius: 40px
+}
+
+input[type=button]:hover {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.small {
+  display: none;
+}
+
+.left {
+  padding: 40px 10px;
+  background-color: white;
+  width: 68%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.drumgrill {
+  width: 38%;
+  z-index: 5;
+  position: absolute;
+  top: 130px;
+  left: 55%;
+}
+
+.drumgrill img {
+  width: 110%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .left {
+    width: 100%;
+  }
+
+  .drumgrill {
+    width: 390px;
+    top: 400px;
+    left: auto;
+    right: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  h3 {
+    font-size: 1.3rem;
+    margin: 0 16px;
+  }
+
+  .left {
+    padding: 40px 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 4.6rem;
+  }
+
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: inline;
+  }
+
+  .drumgrill {
+    width: 300px;
+    top: 360px;
+    right: 0%;
+  }
+}
+
+@media only screen and (max-width: 514px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  .drumgrill {
+    width: 250px;
+    top: 335px;
+  }
+
+  .left {
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .drumgrill {
+    width: 220px;
+    top: 300px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  h1 {
+    font-size: 2.9rem;
+  }
+}
+
+.chips {
+  position: absolute;
+  z-index: 8;
+  left: 30px;
+  top: 440px;
+}
+
+.chips img {
+  width: 16%;
+}
+
+footer {
+  background-image: url('../../resources/images/footer.png');
+  height: 282px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+  width: 100%;
+  z-index: 7;
+}
+
+@media only screen and (min-width: 1300px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  .title {
+    width: 900px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .drumgrill {
+    top: 340px;
+  }
+
+  .chips {
+    top: 780px;
+  }
+
+  footer {
+    top: 220px;
+    height: 342px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .chips {
+    top: 680px;
+  }
+
+  footer {
+    top: 180px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .chips img {
+    width: 160px;
+  }
+
+  footer {
+    height: 230px;
+    top: 200px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .chips img {
+    width: 125px;
+  }
+
+  .chips {
+    top: 700px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .chips {
+    top: 650px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .chips img {
+    width: 110px;
+  }
+}
+
+@media only screen and (max-width: 514px) {
+  footer {
+    height: 200px;
+    top: 180px;
+  }
+
+  .chips {
+    top: 580px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .chips img {
+    width: 20%;
+  }
+
+  .chips {
+    top: 540px;
+    left: 10px;
+  }
+
+  footer {
+    height: 150px;
+    top: 170px;
+  }
+}
